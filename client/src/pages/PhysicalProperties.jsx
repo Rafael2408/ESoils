@@ -328,7 +328,7 @@ function PhysicalProperties() {
                   <strong>mm</strong>
                 </li>
                 <li>
-                  <strong>%peso/peso</strong>
+                  <strong>% weight/weight</strong>
                 </li>
                 <li>&nbsp</li>
                 <li>
