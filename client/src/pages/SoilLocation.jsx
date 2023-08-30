@@ -6,7 +6,7 @@ import {Navigate} from 'react-router-dom'
 function SoilLocation() {
   //const navigate = Navigate()
   useEffect(() =>{
-    ScriptMap()
+    //ScriptMap()
   }, [])
 
   return (
@@ -18,16 +18,22 @@ function SoilLocation() {
             <ul className="Tipo tipo_preview_soil">
               <li>
                 <div id="myMap">
-                  <iframe
+                  {/* <iframe
                     width="600"
                     height="400"
                     // src="https://www.bing.com/maps/embed?h=400&w=600&cp=-0.3772381220231438~-78.56003736703599&lvl=7.453412996666358&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
-                    src={`https://www.bing.com/api/maps/mapcontrol?callback=${GetMap()}&key= AoOD7rLpof2UOkBduy8To8wNaH_TNPTkLRIZxwzGB4XCBwO4l9DIqzT-vJ4_jn7X`
+                    src={`https://www.bing.com/api/maps/mapcontrol?callback=${GetMap()}&key=AoOD7rLpof2UOkBduy8To8wNaH_TNPTkLRIZxwzGB4XCBwO4l9DIqzT-vJ4_jn7X`
                     }
                     scrolling="no"
                     rel="preload"
                     as="font"
-                  ></iframe>
+                  ></iframe> */}
+                  <script
+                    type="text/javascript"
+                    src="http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AoOD7rLpof2UOkBduy8To8wNaH_TNPTkLRIZxwzGB4XCBwO4l9DIqzT-vJ4_jn7X"
+                    async
+                    defer
+                  ></script>
                 </div>
               </li>
             </ul>

@@ -1,4 +1,4 @@
-export const ScriptMap = () => {
+export const ScriptMap = async() => {
     //Create a global variable to store the current pin and infobox
     var currentSelection = null;
     console.log("pasa por aqui")
