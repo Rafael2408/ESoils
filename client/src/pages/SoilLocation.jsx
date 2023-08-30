@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 import "../assets/styles/Estilo_Formularios.css";
-import {ScriptMap ,GetMap} from '../helpers/script_Maps'
+import {ScriptMap, GetMap } from '../helpers/script_Maps'
 import {Navigate} from 'react-router-dom'
 
 function SoilLocation() {
   //const navigate = Navigate()
   useEffect(() =>{
-    //ScriptMap()
+    ScriptMap()
+    GetMap()
   }, [])
 
   return (
@@ -31,8 +32,7 @@ function SoilLocation() {
                   <script
                     type="text/javascript"
                     src="http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AoOD7rLpof2UOkBduy8To8wNaH_TNPTkLRIZxwzGB4XCBwO4l9DIqzT-vJ4_jn7X"
-                    async
-                    defer
+                    
                   ></script>
                 </div>
               </li>

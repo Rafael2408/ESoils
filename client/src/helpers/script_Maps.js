@@ -4,11 +4,11 @@ export const ScriptMap = async() => {
     console.log("pasa por aqui")
 }
     export function GetMap() {
+        console.log("pasa por GetMap")
         var map = new Microsoft.Maps.Map('#myMap', {
             credentials: 'AoOD7rLpof2UOkBduy8To8wNaH_TNPTkLRIZxwzGB4XCBwO4l9DIqzT-vJ4_jn7X'
         });
         
-        console.log("pasa por GetMap")
 
         //Add a click event handler to the map
         Microsoft.Maps.Events.addHandler(map, 'click', function (e) {
