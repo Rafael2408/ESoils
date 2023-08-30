@@ -1,15 +1,14 @@
 import { useEffect } from "react";
 import "../assets/styles/Estilo_Formularios.css";
-import {ScriptMap, GetMap } from '../helpers/script_Maps'
-import {Navigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 function SoilLocation() {
-  //const navigate = Navigate()
+
   useEffect(() =>{
-    ScriptMap()
-    GetMap()
+    
   }, [])
 
+  const navigate = useNavigate()
   return (
     <>
       <section className="Data" id="content">
@@ -19,35 +18,19 @@ function SoilLocation() {
             <ul className="Tipo tipo_preview_soil">
               <li>
                 <div id="myMap">
-                  {/* <iframe
-                    width="600"
-                    height="400"
-                    // src="https://www.bing.com/maps/embed?h=400&w=600&cp=-0.3772381220231438~-78.56003736703599&lvl=7.453412996666358&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
-                    src={`https://www.bing.com/api/maps/mapcontrol?callback=${GetMap()}&key=AoOD7rLpof2UOkBduy8To8wNaH_TNPTkLRIZxwzGB4XCBwO4l9DIqzT-vJ4_jn7X`
-                    }
-                    scrolling="no"
-                    rel="preload"
-                    as="font"
-                  ></iframe> */}
-                  <script
-                    type="text/javascript"
-                    src="http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AoOD7rLpof2UOkBduy8To8wNaH_TNPTkLRIZxwzGB4XCBwO4l9DIqzT-vJ4_jn7X"
-                    
-                  ></script>
-                </div>
+                </div>     
               </li>
             </ul>
           </div>
 
           <div className="Botones_sumbit">
             <button className="submit"
-              
+              onClick={() => navigate("/soils")}
             >← Previus</button>
             <button
               type="submit"
-              className="submit"
-              // onclick="PostRegistro_Suelos(); guardarIdeSuelo();"
-              
+              className="submit"          
+              onClick={() => navigate('/physical-properties')}
             >
               Next →
             </button>
