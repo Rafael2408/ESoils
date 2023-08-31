@@ -116,11 +116,71 @@ export const NavStep44 = () => {
 };
 
 export const NavStep31 = () => {
-  return <></>;
+  return (
+    <>
+      <div className="nav_steps">
+        <a href="#" className="dot">
+          1
+        </a>
+        <a href="#" className="line"></a>
+
+        <a href="#" className="line bg_wh"></a>
+        <a href="#" className="dot bg_wh">
+          2
+        </a>
+        <a href="#" className="line bg_wh"></a>
+
+        <a href="#" className="line bg_wh"></a>
+        <a href="#" className="dot bg_wh">
+          3
+        </a>
+      </div>
+    </>
+  );
 };
 export const NavStep32 = () => {
-  return <></>;
+  return (
+    <>
+      <div className="nav_steps">
+        <a href="#" className="dot bg_wh">
+          1
+        </a>
+        <a href="#" className="line  bg_wh"></a>
+
+        <a href="#" className="line"></a>
+        <a href="#" className="dot">
+          2
+        </a>
+        <a href="#" className="line"></a>
+
+        <a href="#" className="line bg_wh"></a>
+        <a href="#" className="dot bg_wh">
+          3
+        </a>
+      </div>
+    </>
+  );
 };
 export const NavStep33 = () => {
-  return <></>;
+  return (
+    <>
+      <div className="nav_steps">
+        <a href="#" className="dot bg_wh">
+          1
+        </a>
+        <a href="#" className="line  bg_wh"></a>
+
+        <a href="#" className="line bg_wh"></a>
+        <a href="#" className="dot bg_wh">
+          2
+        </a>
+        <a href="#" className="line bg_wh"></a>
+
+        <a href="#" className="line"></a>
+        <a href="#" className="dot">
+          3
+        </a>
+      </div>
+    </>
+  );
 };

@@ -11,28 +11,21 @@ function SoilsPage() {
   // console.log(user);
   const navigate = useNavigate();
 
-  const myRegisters = () => {
-    navigate("/my-registers");
-  };
-  const formPage = () => {
-    navigate("/soil-location");
-  };
-
   return (
     <>
       <section className="Data">
         <div id="cont_img">
           <h1 className="Titulo_propiedades">My records</h1>
           <div className="sec_img">
-            <div className="effectRecord" onClick={myRegisters}>
-              <button className="btn_op_reg" onClick={myRegisters}>
+            <div className="effectRecord" onClick={() => navigate("/my-registers")}>
+              <button className="btn_op_reg" onClick={() => navigate("/my-registers")}>
                 View my records
               </button>
               <img src={Photo_ver_registros} width="400" />
             </div>
 
-            <div className="effectRecord" onClick={formPage}>
-              <button className="btn_op_reg" onClick={formPage}>
+            <div className="effectRecord" onClick={() => navigate("/soil-location")}>
+              <button className="btn_op_reg" onClick={() => navigate("/soil-location")}>
                 New registration
               </button>
               <img src={Photo_nuevo_registro} width="400" />

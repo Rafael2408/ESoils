@@ -1,14 +1,15 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "../assets/styles/Estilo_Formularios.css";
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
+import GetMap from '../helpers/FineScriptMap'
 
 function SoilLocation() {
+  const navigate = useNavigate();
 
-  useEffect(() =>{
-    
-  }, [])
+  useEffect(() => {
+    setTimeout(GetMap, 800, null);
+  }, []);
 
-  const navigate = useNavigate()
   return (
     <>
       <section className="Data" id="content">
@@ -17,20 +18,19 @@ function SoilLocation() {
           <div className="Steps steps_preview_soil">
             <ul className="Tipo tipo_preview_soil">
               <li>
-                <div id="myMap">
-                </div>     
+                <div id="myMap"></div>
               </li>
             </ul>
           </div>
 
           <div className="Botones_sumbit">
-            <button className="submit"
-              onClick={() => navigate("/soils")}
-            >← Previus</button>
+            <button className="submit" onClick={() => navigate("/soils")}>
+              ← Previus
+            </button>
             <button
               type="submit"
-              className="submit"          
-              onClick={() => navigate('/physical-properties')}
+              className="submit"
+              onClick={() => navigate("/physical-properties")}
             >
               Next →
             </button>

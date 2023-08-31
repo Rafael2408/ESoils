@@ -4,8 +4,11 @@ import "../assets/styles/Estilo_Steps.css";
 import {upDateForm} from '../helpers/fisicas';
 import { useEffect } from "react";
 import {NavStep41, NavStep42, NavStep43, NavStep44} from '../components/navStep'
+import { useNavigate } from "react-router-dom";
 
 function PhysicalProperties() {
+  const navigate = useNavigate()
+
   useEffect(() =>{
     upDateForm()
   }, [])
@@ -116,11 +119,10 @@ function PhysicalProperties() {
               </ul>
             </div>
             <div className="Botones_sumbit">
-              <a href="./Photo_Location.html" className="submit">
+              <a className="submit"onClick={() => navigate('/soil-location')}>
                 ← Previus
               </a>
-              <a href="#" className="submit btn-next"
-                
+              <a className="submit btn-next"
               >
                 Next →
               </a>
@@ -447,7 +449,7 @@ function PhysicalProperties() {
               <a href="#" className="submit btn-prev">
                 ← Previus
               </a>
-              <button className="submit">Next →</button>
+              <button className="submit" onClick={() => navigate('/chemical-properties')}>Next →</button>
               {/* <button className="submit" onclick="postFisicas()">Next →</button> */}
             </div>
           </div>
