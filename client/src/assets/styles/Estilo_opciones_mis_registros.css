@@ -10,10 +10,10 @@
 }
 
 body {
-  background-color: #e8eaee;
+  background-color: #e8eaee !important;
 }
 .Data {
-  padding-top: 100px;
+  padding-top: 0% !important;
   display: flex;
   justify-content: center;
   flex-direction: column;

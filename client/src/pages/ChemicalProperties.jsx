@@ -1,5 +1,4 @@
 import "../assets/styles/Estilo_Index.css";
-import "../assets/styles/Estilo_Formularios.css";
 import "../assets/styles/Estilo_Steps.css";
 import { upDateForm } from "../helpers/fisicas";
 import { useEffect } from "react";

@@ -1,5 +1,5 @@
-import "../assets/styles/Estilo_login-general.css";
 import logov2 from "../assets/IMAGENES/Logo-version2.png";
+import "../assets/styles/Estilo_login-general.css";
 
 import { useForm } from "react-hook-form";
 import { useAuth } from "../context/AuthContext";

@@ -8,6 +8,26 @@ div a{
 	font-family: "Aleo", serif;
 	font-weight: 500;
 }
+table{
+	color: black;
+	font-family: "Aleo", serif;
+	height: auto;
+	width: 880px;
+}
+table th{
+	font-size: 20px;
+}
+table thead th{
+	font-size: 30px;
+}
+table input{
+	width: 100% ;
+}
+.subtitles{
+	text-align: center !important;
+}
+
+
 
 
 

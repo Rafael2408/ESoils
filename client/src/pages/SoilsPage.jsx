@@ -1,7 +1,6 @@
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
-import "../assets/styles/Estilo_Index.css";
 import "../assets/styles/Estilo_opciones_mis_registros.css";
 import Photo_ver_registros from "../assets/IMAGENES/Photo_ver_registros.png";
 import Photo_nuevo_registro from "../assets/IMAGENES/Photo_nuevo_registro.png";
