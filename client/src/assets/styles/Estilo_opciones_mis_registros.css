@@ -8,10 +8,10 @@
 .effectRecord:hover {
   transform: scale(1.1);
 }
-
 body {
-  background-color: #e8eaee !important;
+  background-color: #e8eaee;
 }
+
 .Data {
   padding-top: 0% !important;
   display: flex;

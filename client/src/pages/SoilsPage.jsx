@@ -6,6 +6,8 @@ import Photo_ver_registros from "../assets/IMAGENES/Photo_ver_registros.png";
 import Photo_nuevo_registro from "../assets/IMAGENES/Photo_nuevo_registro.png";
 
 function SoilsPage() {
+  document.body.style = "background: #e8eaee;";
+  
   const { user } = useAuth();
   // console.log(user);
   const navigate = useNavigate();

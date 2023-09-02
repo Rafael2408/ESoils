@@ -6,6 +6,8 @@ import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
 function LoginPage() {
+  document.body.style = "background: #090505;";
+
   const {
     register,
     handleSubmit,

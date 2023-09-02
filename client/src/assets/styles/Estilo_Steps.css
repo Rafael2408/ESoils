@@ -23,6 +23,12 @@ table thead th{
 table input{
 	width: 100% ;
 }
+table select{
+	height: 35px;
+}
+.select_box{
+	height: 35px;
+}
 .subtitles{
 	text-align: center !important;
 }

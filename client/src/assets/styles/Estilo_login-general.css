@@ -19,13 +19,13 @@ p{
 }
 
 body{
-	background-color: #090505 !important;
+	background-color: #090505;
 	color: white;
 	font-family: 'Inter', sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	/* height: 100vh; */
 	margin: 0px;
 }
 .esp_img{

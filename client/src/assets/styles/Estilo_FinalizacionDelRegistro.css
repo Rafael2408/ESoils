@@ -1,11 +1,42 @@
-/**CSS 
-*/
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@150&display=swap');
+
+#tbid td:nth-child(3) { 
+    padding-top: 18px; 
+    width: auto;
+}
+#tbid td:nth-child(2) {
+    width: 50px !important; 
+} 
+#tbid td:nth-child(4) {
+    width: 500px !important; 
+} 
+#tbid input{
+    border-radius: 12px;
+    border: none;
+    text-align: center;
+    width: 200px;
+}
+#titlefinish{
+    font-size: 42px;
+}
+#tbid select{
+    width: 170px;
+}
+
+
+.contenedor_clasificacion{
+    color: black;
+	font-family: 'Aleo', serif;
+
+}
+
 body{
     background: #E8EAEE;
 }
 
 .espacio{
-    padding-top: 130px;
+    padding-top: 13px;
 }
 
 .titles{
@@ -73,6 +104,8 @@ body{
 .nombresuelo{
     display: flex;
     justify-content: center;
+    font-size: 131%;
+    margin-bottom: 15px;
 }
 #suelo{
     position: relative;

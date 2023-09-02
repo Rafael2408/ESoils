@@ -28,66 +28,6 @@ function BiologicalProperties() {
             {<NavStep41 />}
 
             <div className="contenedor_form">
-              {/* <table>
-                <tr>
-                  <th className="subtitles">Soil organisms</th>
-                  <th colSpan={4}></th>
-                </tr>
-                <tr>
-                  <tr name="formSec1" id="formSecund1">
-                    <th>Types of organisms present</th>
-                    <td>
-                      <input
-                        type="text"
-                        name="organism"
-                        className="valores txt_value_biological"
-                        id="organism"
-                        placeholder="(Worms, nematodes, etc.)"
-                      />
-                    </td>
-                    <th>Quantity</th>
-                    <td>
-                      <input
-                        type="number"
-                        name="number_organism"
-                        id="number_organism"
-                        className="valores"
-                        min="1"
-                      />
-                    </td>
-                    <td>
-                      <button
-                        className="submit btn_añadir"
-                        onclick="postBiologicas1()"
-                      >
-                        Add
-                      </button>
-                    </td>
-                  </tr>
-                </tr>
-                <tr>
-                  <th className="td_top">Additional remarks</th>
-                  <td colSpan={3}>
-                    <textarea
-                      name="organisms_description"
-                      className="valores txtarea_biological"
-                      placeholder="(“The organisms were mostly found on the surface....”)"
-                    ></textarea>
-                  </td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th></th>
-                  <th colSpan={3}>
-                    <textarea
-                      id="txtOrganisms"
-                      className="valores txtarea_biological bg_wh_txt"
-                    ></textarea>
-                  </th>
-                  <td></td>
-                </tr>
-              </table> */}
-
               <table>
                 <thead>
                   <tr>
@@ -119,7 +59,7 @@ function BiologicalProperties() {
                     <td>
                       <button
                         className="submit btn_añadir"
-                        onclick="postBiologicas1()"
+                        // onclick="postBiologicas1()"
                       >
                         Add
                       </button>
@@ -150,7 +90,11 @@ function BiologicalProperties() {
               </table>
             </div>
             <div className="Botones_sumbit">
-              <a href="#" className="submit btn-prev">
+              <a
+                href="#"
+                className="submit btn-prev"
+                onClick={() => navigate("/chemical-properties")}
+              >
                 ← Previus
               </a>
               <a href="#" className="submit btn-next">
@@ -162,14 +106,17 @@ function BiologicalProperties() {
           <div className="form-step">
             {/* <!-- Progress bar 2--> */}
             {<NavStep42 />}
-
             <div className="contenedor_form">
               <table>
-                <tr>
-                  <th  colSpan = {2} className="subtitles">Microbial activity</th>
-                  <th></th>
-                </tr>
-                <tr>
+                <thead>
+                  <tr>
+                    <th colSpan={2} className="subtitles">
+                      Microbial activity
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
                   <th>Type of microbial activity</th>
                   <td colSpan={2}>
                     <input
@@ -203,7 +150,9 @@ function BiologicalProperties() {
                   </td>
                 </tr>
                 <tr>
-                  <th  colSpan={2} className="subtitles">Microbial biomass</th>
+                  <th colSpan={2} className="subtitles">
+                    Microbial biomass
+                  </th>
                   <th colSpan={2}></th>
                 </tr>
                 <tr>
@@ -252,6 +201,7 @@ function BiologicalProperties() {
                     ></textarea>
                   </td>
                 </tr>
+                </tbody>
               </table>
             </div>
             <div className="Botones_sumbit">
@@ -267,16 +217,16 @@ function BiologicalProperties() {
           <div className="form-step">
             {/* <!-- Progress bar 3--> */}
             {<NavStep43 />}
-
             <div className="contenedor_form">
               <table>
-                <tr>
-                  <th className="subtitles">Macroinvertebrates</th>
-                  <th colSpan={4}></th>
-                </tr>
-                <tr>
+                <thead>
                   <tr>
-                    <th>Types of macroinvertebrates</th>
+                    <th colSpan={2}>Macroinvertebrates</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Types of organisms present</th>
                     <td>
                       <input
                         type="text"
@@ -286,7 +236,7 @@ function BiologicalProperties() {
                         placeholder="(Beetles, mealybugs, etc.)"
                       />
                     </td>
-                    <th>Quantity</th>
+                    <td>Quantity</td>
                     <td>
                       <input
                         type="number"
@@ -298,35 +248,35 @@ function BiologicalProperties() {
                     </td>
                     <td>
                       <button
-                        onclick="postBiologicas2()"
+                        // onclick="postBiologicas2()"
                         className="submit btn_añadir"
                       >
                         Add
                       </button>
                     </td>
                   </tr>
-                </tr>
-                <tr>
-                  <th className="td_top">Additional remarks</th>
-                  <td colSpan={3}>
-                    <textarea
-                      className="valores txtarea_biological"
-                      name="macroinvertebrates_description"
-                      placeholder="(“Macroinvertebrates were mostly found on the surface....”)"
-                    ></textarea>
-                  </td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th></th>
-                  <th colSpan={3}>
-                    <textarea
-                      className="valores txtarea_biological bg_wh_txt"
-                      id="txtMacroinvertebrates"
-                    ></textarea>
-                  </th>
-                  <td></td>
-                </tr>
+                  <tr>
+                    <th>Additional remarks</th>
+                    <td colSpan={3}>
+                      <textarea
+                        className="valores txtarea_biological"
+                        name="macroinvertebrates_description"
+                        placeholder="(“Macroinvertebrates were mostly found on the surface....”)"
+                      ></textarea>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <td colSpan={3}>
+                      <textarea
+                        className="valores txtarea_biological bg_wh_txt"
+                        id="txtMacroinvertebrates"
+                      ></textarea>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
               </table>
             </div>
             <div className="Botones_sumbit">
@@ -338,68 +288,73 @@ function BiologicalProperties() {
               </a>
             </div>
           </div>
+
           <div className="form-step">
             {/* <!-- Progress bar 4--> */}
             {<NavStep44 />}
-
             <div className="contenedor_form">
               <table>
-                <tr>
-                  <th className="subtitles">Roots</th>
-                  <th></th>
-                </tr>
-                <tr>
-                  <th>Average depth</th>
-                  <td>
-                    <input
-                      type="number"
-                      name="average_depth"
-                      className="valores"
-                    />
-                    <b className="unit_measure">cm</b>
-                  </td>
-                </tr>
-                <tr>
-                  <th className="td_top">Measurement method</th>
-                  <td>
-                    <select
-                      name="meassurement_method"
-                      id=""
-                      className="sel_bio"
-                    >
-                      <option value="Estado 0 (Sin raíces visibles)">
-                        Status 0 (No visible roots)
-                      </option>
-                      <option value="Estado 1 (Raíces individuales)">
-                        State 1 (Individual roots)
-                      </option>
-                      <option value="Estado 2 (Raíces finas)">
-                        Stage 2 (Fine roots)
-                      </option>
-                      <option value="Estado 3 (Raíces densas)">
-                        State 3 (Dense roots)
-                      </option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <th className="td_top">Additional remarks</th>
-                  <td>
-                    <textarea
-                      className="valores txtarea_biological step4_bio"
-                      name="additional_remarks"
-                      placeholder="(“Values indicate moderate microbial biomass in the soil.”)."
-                    ></textarea>
-                  </td>
-                </tr>
+                <thead>
+                  <tr>
+                    <th className="subtitles">Roots</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Average depth</th>
+                    <td>
+                      <input
+                        type="number"
+                        name="average_depth"
+                        className="valores"
+                      />
+                      <b className="unit_measure">cm</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th className="td_top">Measurement method</th>
+                    <td>
+                      <select
+                        name="meassurement_method"
+                        id=""
+                        className="sel_bio"
+                      >
+                        <option value="Estado 0 (Sin raíces visibles)">
+                          Status 0 (No visible roots)
+                        </option>
+                        <option value="Estado 1 (Raíces individuales)">
+                          State 1 (Individual roots)
+                        </option>
+                        <option value="Estado 2 (Raíces finas)">
+                          Stage 2 (Fine roots)
+                        </option>
+                        <option value="Estado 3 (Raíces densas)">
+                          State 3 (Dense roots)
+                        </option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th className="td_top">Additional remarks</th>
+                    <td>
+                      <textarea
+                        className="valores txtarea_biological step4_bio"
+                        name="additional_remarks"
+                        placeholder="(“Values indicate moderate microbial biomass in the soil.”)."
+                      ></textarea>
+                    </td>
+                  </tr>
+                </tbody>
               </table>
             </div>
             <div className="Botones_sumbit">
               <a href="#" className="submit btn-prev">
                 ← Previus
               </a>
-              <button onclick="postBiologicas()" className="submit">
-                {" "}
+              <button
+                className="submit"
+                onClick={() => navigate("/scientific-name")}
+              >
                 Next →
               </button>
             </div>
