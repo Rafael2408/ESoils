@@ -7,6 +7,8 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 function RegisterPage() {
+  document.body.style = "background: #090505;";
+  
   const {
     register,
     handleSubmit,

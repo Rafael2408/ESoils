@@ -225,7 +225,7 @@ function ScientificName() {
             className="submit btn-prev"
             onClick={() => navigate("/biological-properties")}
           >
-            ← Previus
+            ← Previous
           </a>
           <button
             className="submit"

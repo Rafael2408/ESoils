@@ -115,7 +115,7 @@ function ChemicalProperties() {
               <a className="submit"
                 onClick={() => navigate('/physical-properties')}
               >
-                ← Previus
+                ← Previous
               </a>
               <a href="#" className="submit btn-next">
                 Next →
@@ -208,7 +208,7 @@ function ChemicalProperties() {
             </div>
             <div className="Botones_sumbit">
               <a href="#" className="submit btn-prev">
-                ← Previus
+                ← Previous
               </a>
               <a href="#" className="submit btn-next">
                 Next →
@@ -301,7 +301,7 @@ function ChemicalProperties() {
             </div>
             <div className="Botones_sumbit">
               <a href="#" className="submit btn-prev">
-                ← Previus
+                ← Previous
               </a>
               <button className="submit"
                 onClick={() => navigate('/biological-properties')}

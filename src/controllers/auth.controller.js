@@ -8,7 +8,6 @@ export const register = async (req, res) => {
     const { name, surname, id_number, email, password } = req.body;
 
     try {
-
         const userFoundi = await User.findOne({id_number})
         if(userFoundi) return res.status(400).json(['The id number is already in use']);
 

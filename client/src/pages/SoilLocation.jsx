@@ -25,7 +25,7 @@ function SoilLocation() {
 
           <div className="Botones_sumbit">
             <button className="submit" onClick={() => navigate("/soils")}>
-              ← Previus
+              ← Previous
             </button>
             <button
               type="submit"

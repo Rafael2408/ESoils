@@ -120,7 +120,7 @@ function PhysicalProperties() {
             </div>
             <div className="Botones_sumbit">
               <a className="submit"onClick={() => navigate('/soil-location')}>
-                ← Previus
+                ← Previous
               </a>
               <a className="submit btn-next"
               >
@@ -239,7 +239,7 @@ function PhysicalProperties() {
             </div>
             <div className="Botones_sumbit">
               <a href="#" className="submit btn-prev">
-                ← Previus
+                ← Previous
               </a>
               <a href="#" className="submit btn-next">
                 Next →
@@ -340,7 +340,7 @@ function PhysicalProperties() {
             </div>
             <div className="Botones_sumbit">
               <a href="#" className="submit btn-prev">
-                ← Previus
+                ← Previous
               </a>
               <a href="#" className="submit btn-next">
                 Next →
@@ -447,7 +447,7 @@ function PhysicalProperties() {
             </div>
             <div className="Botones_sumbit">
               <a href="#" className="submit btn-prev">
-                ← Previus
+                ← Previous
               </a>
               <button className="submit" onClick={() => navigate('/chemical-properties')}>Next →</button>
               {/* <button className="submit" onclick="postFisicas()">Next →</button> */}

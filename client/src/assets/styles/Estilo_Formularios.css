@@ -24,6 +24,8 @@ button{
 }
 
 .Titulo_propiedades{
+	position: relative;
+	top: 15px;
 	text-align: center;
 	font-size: 40px;
 }
