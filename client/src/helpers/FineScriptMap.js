@@ -1,13 +1,12 @@
 //Create a global variable to store the current pin and infobox
 //var currentSelection = null;
 
-export default function GetMap(currentSelection = null) {
+export default function GetMap() {
     try {
         //var currentSelection = null;
         var map = new Microsoft.Maps.Map('#myMap', {
             credentials: 'AoOD7rLpof2UOkBduy8To8wNaH_TNPTkLRIZxwzGB4XCBwO4l9DIqzT-vJ4_jn7X'
         });
-
         //Add a click event handler to the map
         Microsoft.Maps.Events.addHandler(map, 'click', function (e) {
             //Get the location of the mouse cursor

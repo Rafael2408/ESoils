@@ -1,6 +1,6 @@
 import "../assets/styles/Estilo_Index.css";
 import "../assets/styles/Estilo_Steps.css";
-import { upDateForm } from "../helpers/fisicas";
+import { upDateForm } from "../helpers/steps";
 import { useEffect } from "react";
 import { NavStep31, NavStep32, NavStep33 } from "../components/navStep";
 import { useNavigate } from "react-router-dom";

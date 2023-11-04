@@ -1,7 +1,7 @@
 import "../assets/styles/Estilo_Index.css";
 import "../assets/styles/Estilo_Formularios.css";
 import "../assets/styles/Estilo_Steps.css";
-import {upDateForm} from '../helpers/fisicas';
+import {upDateForm} from '../helpers/steps';
 import { useEffect } from "react";
 import {NavStep41, NavStep42, NavStep43, NavStep44} from '../components/navStep'
 import { useNavigate } from "react-router-dom";
@@ -450,7 +450,7 @@ function PhysicalProperties() {
                 ← Previous
               </a>
               <button className="submit" onClick={() => navigate('/chemical-properties')}>Next →</button>
-              {/* <button className="submit" onclick="postFisicas()">Next →</button> */}
+              
             </div>
           </div>
         </div>
